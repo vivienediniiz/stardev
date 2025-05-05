@@ -45,6 +45,7 @@ header{
     width: 10vh;
     height: auto;
     background-color: red;
+    color: #c1c0c2;
 }
 #logo{
     display: flex;
