@@ -1,0 +1,431 @@
+:root {
+    
+    --cor1: #292929;
+    --cor2: #7c7a7d;
+    --cor3: #2E2E2E;
+    --cor3: #10041D;
+    --efeito-degrade-texto: 
+    linear-gradient(-60deg, #6e2fe3, #972bdf, #e84df6);
+
+    --font-family-roboto: "Roboto", sans-serif;
+    --font-family-quik: "Quicksand", sans-serif;
+    --font-family-mono: "Roboto Mono", monospace;
+    --font-family-codec: "Source Code Pro", serif;
+    --font-family-poppins: "Poppins", sans-serif;
+    --font-family-skillet: "skillet-font", sans-serif;
+}
+
+
+
+@media (max-width:480px){
+.interface {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 100%;
+    margin: 0px auto;
+    background-color: #eeeeee;
+    
+ 
+    
+  }
+
+/* #region HAEADER*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.oferta-limitada{
+    width: 10vh;
+    height: auto;
+    background-color: red;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-ebook{
+    margin-top: 1px;
+    font-family: var(--font-family-skillet);
+    font-size: 4.8rem;
+    background: var(--efeito-degrade-texto);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*#endregion*/
+
+/* #region MAIN*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.typed-wrapper {
+  font-family: var(--font-family-poppins);
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 20px;
+  color: var(--cor3);
+}
+
+
+.button-topo{
+    position: relative;
+    width: 23rem;
+    height: 5rem;
+    border-radius: 3rem;
+    border: 3px solid #972bdf;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fcfcfc;
+    background-color: #972bdf;
+    font-family: var(--font-family-poppins);
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color0.3s esase;
+}
+
+
+.button-topo::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    transition: left 0.3 ease;
+    z-index: 0;
+    color: rgb(75, 19, 19);                                  
+
+}
+
+.button-topo:hover::after{
+    left:0;
+}
+
+.button-topo span{
+    position: relative;
+    z-index: 1;
+}
+
+.button-topo:hover{
+    color: #6e2fe3;
+}
+
+
+
+.imagem-ebook-1 p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: var(--font-family-poppins);
+    text-align: center; 
+    font-size: 1.5rem;
+    background: var(--efeito-degrade-texto);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+}
+
+
+.oferta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    }
+
+.de{
+    position: relative;
+    display:inline-block;
+    font-family: var(--font-family-poppins);
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+.de::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    transform: rotate(-370deg); 
+    background-color: red;
+   
+
+}
+
+.desconto{
+    font-family: var(--font-family-poppins);
+    font-size: 3rem;
+     font-weight: 700;
+     background: var(--efeito-degrade-texto);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#blinking-text {
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: #ff4081;
+  font-weight: bold;
+}
+
+/*#endregion*/
+
+/*#region IMAGEM BOOK*/
+
+.imagem-ebook-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.imagem-ebook-1 img{
+    width: 500px;
+    height: auto;
+}
+
+.subheadline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px;
+    font-family: var(--font-family-poppins);
+    font-size: 1.4rem;
+    color: #ffffff;
+    background-color: var(--cor2);
+    
+    
+
+
+}
+/*#endregion*/
+
+
+/*#region BENEFICIOS*/
+
+.beneficios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+ 
+
+.beneficios h1{
+    font-family: var(--font-family-poppins);
+    text-align: center;
+    font-size: 2.5rem;
+    background: var(--efeito-degrade-texto);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 50px;
+}
+
+.descricao{   
+   display: flex;
+   flex-direction: column;
+   justify-content:left;
+
+  
+
+}
+
+.item-1, .item-2, .item-3, .item-4{
+    color: #6e2fe3;
+    display: flex;
+   justify-items: flex-start;
+    
+    font-family: var(--font-family-poppins);
+    gap: 30px;
+    font-size: 1rem;
+    font-weight: 600;    
+    line-height: 2rem;
+
+ }
+ .checklist{
+    width: 30px;
+    height: 30px;
+    
+ }
+/*#endregion*/
+
+
+/*#region FAQ*/
+.faq {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  
+}
+
+.faq h1{
+    margin-top: 100px;
+    font-family: var(--font-family-poppins);
+    text-align: center;
+    font-size: 3rem;
+    background: var(--efeito-degrade-texto);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 50px;
+}
+
+.faq-item {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 0;
+}
+
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  background: #a8a3a5;
+background: linear-gradient(nulldeg, rgba(168, 163, 165, 1) 0%, rgba(198, 148, 233, 1) 100%);
+  border-radius: 10px;
+  padding: 10px 40px 10px 40px;
+  color: rgb(252, 249, 249);
+  font-family: var(--font-family-poppins);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.faq-answer {
+  margin: 0px 10px 0px 10px;
+  padding: 0px 5px 0px 2px;
+  text-align: left;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  border-radius: 0px 0px 20px 20px;
+  color: var(--cor3);
+  background-color: #c1c0c2;
+  font-size: 1.2rem;
+  font-family: var(--font-family-poppins);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 1000px;
+  padding: 10px 15px 10px 15px;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  color: #aa2fe3;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(90deg);
+}
+
+
+/*endregion*/
+
+
+/*#region DEPOIMENTOS*/
+.depoimentos-scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.depoimentos-scroll h2{
+    font-family: var(--font-family-poppins);
+    background: var(--efeito-degrade-texto);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*endregion*/
+}
+
+/*#region DEPOIMENTOS*/
+
+.depoimentos.auto{
+    display: flex;
+}
+
+
+.depoimentos-auto h2{
+    font-family: var(--font-family-poppins);
+    text-align: center;
+    font-size: 2.5rem;
+    background: var(--efeito-degrade-texto);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.scroll-auto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    height: 15rem;
+    background-color: #c7c7c7;
+    border-radius: 20px;
+
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--font-family-poppins);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.star img{
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
+
+}
+
+span{
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    font-size: 1.2rem;
+    justify-items: right;
+
+}
+/*  enderegion*/
